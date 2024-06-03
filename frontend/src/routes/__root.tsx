@@ -11,6 +11,12 @@ function NavBar() {
       <Link to="/" className="[&.active]:font-bold">
         Home
       </Link>{" "}
+      <Link to="/expenses" className="[&.active]:font-bold">
+        Uitgave
+      </Link>
+      <Link to="/create-expense" className="[&.active]:font-bold">
+        Toevoegen
+      </Link>
     </div>
   );
 }
