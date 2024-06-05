@@ -12,7 +12,7 @@ import { createFileRoute, Outlet, redirect } from "@tanstack/react-router";
 function Login() {
   return (
     <div className="m-auto mt-[100px]">
-      <Card className="h-[250px]">
+      <Card className="h-[200px]">
         <CardHeader>
           <CardTitle className="flex m-auto">Inloggen</CardTitle>
           <CardDescription className="flex m-auto">

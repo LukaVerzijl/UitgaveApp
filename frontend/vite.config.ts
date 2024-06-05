@@ -6,6 +6,7 @@ import { TanStackRouterVite } from '@tanstack/router-vite-plugin'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), TanStackRouterVite(),
+
   ],
   resolve: {
     alias: {
@@ -13,6 +14,7 @@ export default defineConfig({
       "@server": path.resolve(import.meta.dir,"../server")
     },
   },
+
   server: {
     proxy: {
       "/api": {
@@ -22,3 +24,5 @@ export default defineConfig({
     }
   }
 })
+
+
