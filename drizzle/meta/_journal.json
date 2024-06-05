@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1717579679454,
+      "tag": "0000_ordinary_the_executioner",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1717581350663,
+      "tag": "0001_wakeful_stellaris",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1717582435350,
+      "tag": "0002_material_lester",
+      "breakpoints": true
+    }
+  ]
+}

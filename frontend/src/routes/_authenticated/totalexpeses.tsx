@@ -11,7 +11,7 @@ import {
 import { api } from "@/lib/api";
 import { useQuery } from "@tanstack/react-query";
 
-export const Route = createFileRoute("/_authenticated/")({
+export const Route = createFileRoute("/_authenticated/totalexpeses")({
   component: Index,
 });
 

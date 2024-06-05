@@ -1,5 +1,13 @@
-import { drizzle } from "drizzle-orm/better-sqlite3";
-import postgres from "postgres";
+import { drizzle } from "drizzle-orm/postgres-js";
 
-const queryClient = postgres(process.env.DATABASE_URL!);
+import postgres from "postgres";
+import { z } from "zod";
+
+const PostgresEnv = z.object({
+  DATABASE_URL: z.string().url(),
+});
+const ProcessEnv = PostgresEnv.parse(process.env);
+
+// for query purposes
+const queryClient = postgres(ProcessEnv.DATABASE_URL);
 export const db = drizzle(queryClient);
