@@ -6,6 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import NavBar from "@/components/ui/navBar";
 import { userQueryOptions } from "@/lib/api";
 import { createFileRoute, Outlet, redirect } from "@tanstack/react-router";
 
@@ -34,11 +35,26 @@ function Login() {
 function Component() {
   const user = Route.useRouteContext();
 
-  console.log(user);
   if (!user.user) {
-    return <Login />;
+    return (
+      <>
+        <NavBar />
+        <hr />
+        <div className="p-2  gap-2 max-w-2xl m-auto">
+          <Login />
+        </div>
+      </>
+    );
   } else {
-    return <Outlet />;
+    return (
+      <>
+        <NavBar />
+        <hr />
+        <div className="p-2  gap-2 max-w-2xl m-auto">
+          <Outlet />
+        </div>
+      </>
+    );
   }
 }
 // src/routes/_authenticated.tsx

@@ -1,30 +1,15 @@
-import { type QueryClient } from "@tanstack/react-query";
-import {
-  createRootRouteWithContext,
-  Link,
-  Outlet,
-} from "@tanstack/react-router";
-import { TanStackRouterDevtools } from "@tanstack/router-devtools";
-
-import { Moon, Sun } from "lucide-react";
-
-import { Button } from "@/components/ui/button";
+import { Link } from "@tanstack/react-router";
+import { useTheme } from "../theme-provider";
+import { Button } from "./button";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { useTheme } from "@/components/theme-provider";
+} from "./dropdown-menu";
+import { Sun, Moon } from "lucide-react";
 
-interface RootContext {
-  queryClient: QueryClient;
-}
-export const Route = createRootRouteWithContext<RootContext>()({
-  component: Root,
-});
-
-function NavBar() {
+export default function NavBar() {
   const { setTheme } = useTheme();
 
   return (
@@ -35,9 +20,17 @@ function NavBar() {
       <div className="flex gap-2">
         {}
         <Link to="/totalexpeses" className="[&.active]:font-bold">
-          Dashboard
+          Totaal
         </Link>
-
+        <Link to="/expenses" className="[&.active]:font-bold">
+          Uitgaves
+        </Link>
+        <Link to="/create-expense" className="[&.active]:font-bold">
+          Nieuw
+        </Link>
+        <Link to="/profile" className="[&.active]:font-bold">
+          Profiel
+        </Link>
         <div className=" ml-12">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
@@ -62,14 +55,5 @@ function NavBar() {
         </div>
       </div>
     </div>
-  );
-}
-
-function Root() {
-  return (
-    <>
-      <Outlet />
-      <TanStackRouterDevtools />
-    </>
   );
 }
