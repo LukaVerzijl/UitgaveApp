@@ -1,6 +1,4 @@
-
-
-
+<a name="readme-top"></a>
 
 <h3 align="center">Uitgave App</h3>
 
