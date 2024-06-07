@@ -25,7 +25,7 @@
 * [![React][React.js]][React-url]
 * [![Bunsh][Bun]][Bun-url]
 
-# Hosted on a vps with <a href="https://coolify.io/">Coolify </a> 
+Hosted on a vps with <a href="https://coolify.io/">Coolify </a> 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
