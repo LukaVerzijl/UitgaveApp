@@ -25,6 +25,7 @@
 ### Built With
 
 * [![React][React.js]][React-url]
+* [![Bunsh][Bun]][Bun-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -114,5 +115,7 @@ Project Link: [https://github.com/LukaVerzijl/UitgaveApp](https://github.com/Luk
 [issues-url]: https://github.com/LukaVerzijl/UitgaveApp/issues
 [license-shield]: https://img.shields.io/github/license/LukaVerzijl/UitgaveApp.svg?style=for-the-badge
 [license-url]: https://github.com/LukaVerzijl/UitgaveApp/blob/master/LICENSE.txt
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB\
+[Bun]: https://img.shields.io/badge/Bun-20232A?style=for-the-badge&logo=Bun&logoColor=fbf0df
+[Bun-url]: https://bun.sh
 [React-url]: https://reactjs.org/
