@@ -5,7 +5,6 @@
   <p align="center">
     Final Project for interface and scripting at the study software development located at Grafisch Lyceum Rotterdam
     <br />
-    <a href="https://github.com/LukaVerzijl/UitgaveApp"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://uitgaveapp.lukaverzijl.nl/">View Demo</a>
@@ -102,7 +101,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/Redlucraft1) - hi@lukaverzijl.nl
+Your Name - [@My Twitter](https://twitter.com/Redlucraft1) - hi@lukaverzijl.nl
 
 Project Link: [https://github.com/LukaVerzijl/UitgaveApp](https://github.com/LukaVerzijl/UitgaveApp)
 
